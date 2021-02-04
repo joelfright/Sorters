@@ -6,9 +6,9 @@ public class BubbleSort implements Sorter {
         int temp;
         boolean swapped;
 
-        for(int repeat : arrayToSort) {
+        for(int j = 1; j < arrayToSort.length; j++) {
             swapped = false;
-            for (int index = 0; index < arrayToSort.length - 1; index++) {
+            for (int index = 0; index < arrayToSort.length - j; index++) {
                 if (arrayToSort[index] > arrayToSort[index + 1]) {
                     temp = arrayToSort[index];
                     arrayToSort[index] = arrayToSort[index + 1];
