@@ -4,6 +4,19 @@ import com.sparta.joel.exceptions.ChildNotFoundException;
 
 public class BinaryTreeImpl implements BinaryTree{
 
+    public class Node {
+
+        int value;
+        Node left;
+        Node right;
+
+        public Node(int value) {
+            this.value = value;
+            left = null;
+            right = null;
+        }
+    }
+
     Node root;
 
     @Override
@@ -121,6 +134,5 @@ public class BinaryTreeImpl implements BinaryTree{
         }
         return orderedArr;
     }
-
 
 }
