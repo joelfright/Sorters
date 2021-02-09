@@ -16,4 +16,8 @@ public class Printer {
         System.err.println(error);
     }
 
+    public static void printInt(int num){
+        System.out.println(num);
+    }
+
 }
