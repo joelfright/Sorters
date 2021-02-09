@@ -4,7 +4,7 @@ import com.sparta.joel.exceptions.ChildNotFoundException;
 
 public class BinaryTreeImpl implements BinaryTree{
 
-    public class Node {
+    public static class Node {
 
         int value;
         Node left;
@@ -62,7 +62,6 @@ public class BinaryTreeImpl implements BinaryTree{
         }else{
             throw new ChildNotFoundException("No child for this element!");
         }
-
     }
 
     @Override
@@ -75,7 +74,6 @@ public class BinaryTreeImpl implements BinaryTree{
     public int[] getSortedTreeDesc() {
         int[] orderedArr = new int[getNumberOfElements()];
         return traverseDesc(root, orderedArr,getNumberOfElements());
-
     }
 
     private Node addElementRecursive(Node current, int value){

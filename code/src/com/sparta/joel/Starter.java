@@ -3,12 +3,11 @@ package com.sparta.joel;
 import com.sparta.joel.exceptions.EmptyArrayException;
 import com.sparta.joel.sorters.BubbleSort;
 import com.sparta.joel.sorters.MergeSort;
-import com.sparta.joel.tree.BinaryTree;
 import com.sparta.joel.tree.BinaryTreeImpl;
 
 public class Starter {
 
-    private static int[] unsortedArray = {0,1,3,5,6,7,5};
+    private static final int[] unsortedArray = {0,1,3,5,6,7,5};
 
     public static void start(){
 
