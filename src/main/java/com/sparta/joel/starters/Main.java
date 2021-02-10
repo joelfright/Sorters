@@ -1,4 +1,4 @@
-package com.sparta.joel;
+package com.sparta.joel.starters;
 
 public class Main {
 

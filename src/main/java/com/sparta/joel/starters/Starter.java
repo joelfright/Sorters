@@ -1,5 +1,6 @@
-package com.sparta.joel;
+package com.sparta.joel.starters;
 
+import com.sparta.joel.printer.Printer;
 import com.sparta.joel.exceptions.EmptyArrayException;
 import com.sparta.joel.sorters.BubbleSort;
 import com.sparta.joel.sorters.MergeSort;
@@ -11,6 +12,7 @@ public class Starter {
 
     public static void start(){
 
+        sorters("bubble");
         binaryTree();
 
     }

@@ -1,4 +1,4 @@
-package com.sparta.joel;
+package com.sparta.joel.printer;
 
 import java.util.Arrays;
 
