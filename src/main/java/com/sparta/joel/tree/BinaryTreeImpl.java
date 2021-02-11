@@ -1,6 +1,11 @@
 package com.sparta.joel.tree;
 
 import com.sparta.joel.exceptions.ChildNotFoundException;
+import com.sparta.joel.starters.SortRunner;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import java.util.ArrayList;
 
 public class BinaryTreeImpl implements BinaryTree{
 
@@ -17,7 +22,9 @@ public class BinaryTreeImpl implements BinaryTree{
         }
     }
 
-    Node root;
+    private Node root;
+    private final ArrayList<Integer> sortedList = new ArrayList<>();
+    private static final Logger logger = LogManager.getLogger(SortRunner.class);
 
     @Override
     public int getRootElement() {
@@ -51,6 +58,7 @@ public class BinaryTreeImpl implements BinaryTree{
         if(root.left != null){
             return root.left.value;
         }else{
+            logger.error("No child found");
             throw new ChildNotFoundException("No child for this element!");
         }
     }
@@ -60,20 +68,23 @@ public class BinaryTreeImpl implements BinaryTree{
         if(root.right != null){
             return root.right.value;
         }else{
+            logger.error("No child found");
             throw new ChildNotFoundException("No child for this element!");
         }
     }
 
     @Override
     public int[] getSortedTreeAsc() {
-        int[] orderedArr = new int[getNumberOfElements()];
-        return traverseAsc(root, orderedArr,0);
+        sortedList.clear();
+        traverseRight(root);
+        return sortedList.stream().mapToInt(i -> i).toArray();
     }
 
     @Override
     public int[] getSortedTreeDesc() {
-        int[] orderedArr = new int[getNumberOfElements()];
-        return traverseDesc(root, orderedArr,getNumberOfElements());
+        sortedList.clear();
+        traverseLeft(root);
+        return sortedList.stream().mapToInt(i -> i).toArray();
     }
 
     private Node addElementRecursive(Node current, int value){
@@ -113,24 +124,20 @@ public class BinaryTreeImpl implements BinaryTree{
         return 1 + countElementsRecursive(current.left) + countElementsRecursive(current.right);
     }
 
-    private int[] traverseAsc(Node node, int[] orderedArr, int index){
+    private void traverseLeft(Node node){
         if(node != null){
-            index++;
-            traverseAsc(node.left, orderedArr,index);
-            orderedArr[index - 1] = node.value;
-            traverseAsc(node.right, orderedArr,index);
+            traverseLeft(node.right);
+            sortedList.add(node.value);
+            traverseLeft(node.left);
         }
-        return orderedArr;
     }
 
-    private int[] traverseDesc(Node node, int[] orderedArr, int index){
+    private void traverseRight(Node node){
         if(node != null){
-            index--;
-            traverseDesc(node.left, orderedArr,index);
-            orderedArr[index] = node.value;
-            traverseDesc(node.right, orderedArr,index);
+            traverseRight(node.left);
+            sortedList.add(node.value);
+            traverseRight(node.right);
         }
-        return orderedArr;
     }
 
 }

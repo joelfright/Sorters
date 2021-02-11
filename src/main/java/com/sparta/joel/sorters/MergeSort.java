@@ -1,9 +1,12 @@
 package com.sparta.joel.sorters;
 
+import com.sparta.joel.exceptions.EmptyArrayException;
+
 public class MergeSort implements Sorter{
 
-    public int[] sortArray(int[] arrayToSort){
+    public int[] sortArray(int[] arrayToSort) throws EmptyArrayException {
 
+        if (arrayToSort.length < 1) throw new EmptyArrayException("This array is empty!");
         sort(arrayToSort, 0, arrayToSort.length - 1);
         return arrayToSort;
 
@@ -14,12 +17,9 @@ public class MergeSort implements Sorter{
         if(left < right){
             int middle = left + (right - left) / 2;
 
-            //Sorting the first half
             sort(arrayToSort,left,middle);
-            //Sorting the second half
             sort(arrayToSort,middle+1,right);
 
-            //Merging the two halves
             merge(arrayToSort, left, middle, right);
         }
 
@@ -33,7 +33,6 @@ public class MergeSort implements Sorter{
         int[] leftArray = new int[lengthArr1];
         int[] rightArray = new int[lengthArr2];
 
-        //Temp arrays
         for(int i = 0; i < lengthArr1; i++){
             leftArray[i] = arrayToSort[left + i];
         }
@@ -44,7 +43,6 @@ public class MergeSort implements Sorter{
         int i = 0;
         int j = 0;
 
-        //Merging two arrays
         int k = left;
         while (i < lengthArr1 && j < lengthArr2) {
             if (leftArray[i] <= rightArray[j]) {
@@ -57,14 +55,12 @@ public class MergeSort implements Sorter{
             k++;
         }
 
-        //Copying remaining elements in left array
         while (i < lengthArr1) {
             arrayToSort[k] = leftArray[i];
             i++;
             k++;
         }
 
-        //Copying remaining elements in right array
         while (j < lengthArr2) {
             arrayToSort[k] = rightArray[j];
             j++;

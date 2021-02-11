@@ -1,6 +1,7 @@
 package com.sparta.joel.printer;
 
 import java.util.Arrays;
+import java.util.concurrent.TimeUnit;
 
 public class Printer {
 
@@ -18,6 +19,10 @@ public class Printer {
 
     public static void printInt(int num){
         System.out.println(num);
+    }
+
+    public static void printTimeResults(long time){
+        System.out.println(TimeUnit.NANOSECONDS.toMicros(time) + " microseconds");
     }
 
 }

@@ -1,0 +1,7 @@
+[ERROR] 2021-02-11 16:38:36.634 [main] Starter - Empty array!
+com.sparta.joel.exceptions.EmptyArrayException: This array is empty!
+	at com.sparta.joel.sorters.BubbleSort.sortArray(BubbleSort.java:10) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.sorters(SortRunner.java:23) ~[classes/:?]
+	at com.sparta.joel.starters.Starter.sortersStart(Starter.java:34) ~[classes/:?]
+	at com.sparta.joel.starters.Starter.start(Starter.java:18) [classes/:?]
+	at com.sparta.joel.starters.Main.main(Main.java:6) [classes/:?]
