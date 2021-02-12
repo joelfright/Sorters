@@ -1,5 +1,6 @@
 package com.sparta.joel.starters;
 
+import com.sparta.joel.exceptions.ChildNotFoundException;
 import com.sparta.joel.exceptions.EmptyArrayException;
 import com.sparta.joel.printer.Input;
 import com.sparta.joel.printer.Printer;
@@ -20,7 +21,14 @@ public class Starter {
         } catch (Exception e){
             logger.fatal("Fatal Exception: ", e);
         }
-        binaryTreeStart();
+
+        try {
+            binaryTreeStart();
+        } catch (ChildNotFoundException e) {
+            logger.error("Child not found!", e);
+        } catch (Exception e){
+            logger.fatal("Fatal Exception: ", e);
+        }
     }
 
     private static void sortersStart() throws EmptyArrayException {
@@ -38,10 +46,9 @@ public class Starter {
         Printer.printString("---------------------------------------\n");
     }
 
-    private static void binaryTreeStart(){
+    private static void binaryTreeStart() throws ChildNotFoundException {
         Printer.printString("Binary tree order: (asc (default)/desc) ");
         String ascending = Input.enterString();
-
         Printer.printString("--------------Binary Tree--------------");
         SortRunner.binaryTree(!ascending.equalsIgnoreCase("desc"));
         Printer.printString("---------------------------------------");

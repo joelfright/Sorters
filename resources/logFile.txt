@@ -18,3 +18,139 @@ com.sparta.joel.exceptions.EmptyArrayException: This array is empty!
 [ERROR] 2021-02-12 11:31:06.311 [main] SortRunner - No child found
 [ERROR] 2021-02-12 11:40:46.203 [main] SortRunner - No child found
 [ERROR] 2021-02-12 11:40:46.209 [main] SortRunner - No child found
+[FATAL] 2021-02-12 14:36:56.098 [main] Starter - Fatal Exception: 
+java.lang.NullPointerException: null
+	at com.sparta.joel.tree.BinaryTreeImpl.getRootElement(BinaryTreeImpl.java:31) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTree(SortRunner.java:36) ~[classes/:?]
+	at com.sparta.joel.starters.Starter.binaryTreeStart(Starter.java:54) ~[classes/:?]
+	at com.sparta.joel.starters.Starter.start(Starter.java:27) [classes/:?]
+	at com.sparta.joel.starters.Main.main(Main.java:6) [classes/:?]
+[ERROR] 2021-02-12 14:39:13.007 [main] SortRunner - No child found
+[ERROR] 2021-02-12 14:39:13.010 [main] Starter - Child not found!
+com.sparta.joel.exceptions.ChildNotFoundException: No child for this element!
+	at com.sparta.joel.tree.BinaryTreeImpl.getRightChild(BinaryTreeImpl.java:74) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTreeTraverse(SortRunner.java:57) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTreeTraverse(SortRunner.java:58) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTree(SortRunner.java:40) ~[classes/:?]
+	at com.sparta.joel.starters.Starter.binaryTreeStart(Starter.java:54) ~[classes/:?]
+	at com.sparta.joel.starters.Starter.start(Starter.java:27) [classes/:?]
+	at com.sparta.joel.starters.Main.main(Main.java:6) [classes/:?]
+[ERROR] 2021-02-12 14:39:56.168 [main] SortRunner - No child found
+[ERROR] 2021-02-12 14:39:56.171 [main] Starter - Child not found!
+com.sparta.joel.exceptions.ChildNotFoundException: No child for this element!
+	at com.sparta.joel.tree.BinaryTreeImpl.getLeftChild(BinaryTreeImpl.java:63) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTreeTraverse(SortRunner.java:55) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTreeTraverse(SortRunner.java:56) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTree(SortRunner.java:48) ~[classes/:?]
+	at com.sparta.joel.starters.Starter.binaryTreeStart(Starter.java:54) ~[classes/:?]
+	at com.sparta.joel.starters.Starter.start(Starter.java:27) [classes/:?]
+	at com.sparta.joel.starters.Main.main(Main.java:6) [classes/:?]
+[ERROR] 2021-02-12 14:40:19.874 [main] SortRunner - No child found
+[ERROR] 2021-02-12 14:40:19.876 [main] Starter - Child not found!
+com.sparta.joel.exceptions.ChildNotFoundException: No child for this element!
+	at com.sparta.joel.tree.BinaryTreeImpl.getLeftChild(BinaryTreeImpl.java:63) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTreeTraverse(SortRunner.java:59) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTreeTraverse(SortRunner.java:59) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTree(SortRunner.java:48) ~[classes/:?]
+	at com.sparta.joel.starters.Starter.binaryTreeStart(Starter.java:54) ~[classes/:?]
+	at com.sparta.joel.starters.Starter.start(Starter.java:27) [classes/:?]
+	at com.sparta.joel.starters.Main.main(Main.java:6) [classes/:?]
+[ERROR] 2021-02-12 14:42:42.406 [main] SortRunner - No child found
+[ERROR] 2021-02-12 14:42:42.410 [main] Starter - Child not found!
+com.sparta.joel.exceptions.ChildNotFoundException: No child for this element!
+	at com.sparta.joel.tree.BinaryTreeImpl.getLeftChild(BinaryTreeImpl.java:63) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTreeTraverse(SortRunner.java:53) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTreeTraverse(SortRunner.java:61) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTreeTraverse(SortRunner.java:61) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTree(SortRunner.java:47) ~[classes/:?]
+	at com.sparta.joel.starters.Starter.binaryTreeStart(Starter.java:54) ~[classes/:?]
+	at com.sparta.joel.starters.Starter.start(Starter.java:27) [classes/:?]
+	at com.sparta.joel.starters.Main.main(Main.java:6) [classes/:?]
+[ERROR] 2021-02-12 14:45:16.445 [main] SortRunner - No child found
+[ERROR] 2021-02-12 14:45:16.448 [main] Starter - Child not found!
+com.sparta.joel.exceptions.ChildNotFoundException: No child for this element!
+	at com.sparta.joel.tree.BinaryTreeImpl.getLeftChild(BinaryTreeImpl.java:63) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTreeTraverse(SortRunner.java:57) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTreeTraverse(SortRunner.java:61) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTreeTraverse(SortRunner.java:61) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTreeTraverse(SortRunner.java:61) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTree(SortRunner.java:47) ~[classes/:?]
+	at com.sparta.joel.starters.Starter.binaryTreeStart(Starter.java:53) ~[classes/:?]
+	at com.sparta.joel.starters.Starter.start(Starter.java:26) [classes/:?]
+	at com.sparta.joel.starters.Main.main(Main.java:6) [classes/:?]
+[ERROR] 2021-02-12 14:45:59.662 [main] SortRunner - No child found
+[ERROR] 2021-02-12 14:45:59.667 [main] Starter - Child not found!
+com.sparta.joel.exceptions.ChildNotFoundException: No child for this element!
+	at com.sparta.joel.tree.BinaryTreeImpl.getLeftChild(BinaryTreeImpl.java:63) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTreeTraverse(SortRunner.java:53) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTreeTraverse(SortRunner.java:61) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTreeTraverse(SortRunner.java:61) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTree(SortRunner.java:47) ~[classes/:?]
+	at com.sparta.joel.starters.Starter.binaryTreeStart(Starter.java:53) ~[classes/:?]
+	at com.sparta.joel.starters.Starter.start(Starter.java:26) [classes/:?]
+	at com.sparta.joel.starters.Main.main(Main.java:6) [classes/:?]
+[ERROR] 2021-02-12 14:50:13.816 [main] SortRunner - No child found
+[ERROR] 2021-02-12 14:50:13.819 [main] Starter - Child not found!
+com.sparta.joel.exceptions.ChildNotFoundException: No child for this element!
+	at com.sparta.joel.tree.BinaryTreeImpl.getLeftChild(BinaryTreeImpl.java:63) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTreeTraverse(SortRunner.java:53) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTreeTraverse(SortRunner.java:61) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTreeTraverse(SortRunner.java:61) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTree(SortRunner.java:47) ~[classes/:?]
+	at com.sparta.joel.starters.Starter.binaryTreeStart(Starter.java:53) ~[classes/:?]
+	at com.sparta.joel.starters.Starter.start(Starter.java:26) [classes/:?]
+	at com.sparta.joel.starters.Main.main(Main.java:6) [classes/:?]
+[ERROR] 2021-02-12 14:52:14.549 [main] SortRunner - No child found
+[ERROR] 2021-02-12 14:52:14.552 [main] Starter - Child not found!
+com.sparta.joel.exceptions.ChildNotFoundException: No child for this element!
+	at com.sparta.joel.tree.BinaryTreeImpl.getLeftChild(BinaryTreeImpl.java:63) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTreeTraverse(SortRunner.java:53) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTreeTraverse(SortRunner.java:61) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTreeTraverse(SortRunner.java:61) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTreeTraverse(SortRunner.java:61) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTreeTraverse(SortRunner.java:61) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTree(SortRunner.java:47) ~[classes/:?]
+	at com.sparta.joel.starters.Starter.binaryTreeStart(Starter.java:53) ~[classes/:?]
+	at com.sparta.joel.starters.Starter.start(Starter.java:26) [classes/:?]
+	at com.sparta.joel.starters.Main.main(Main.java:6) [classes/:?]
+[ERROR] 2021-02-12 14:54:11.465 [main] SortRunner - No child found
+[ERROR] 2021-02-12 14:54:11.467 [main] Starter - Child not found!
+com.sparta.joel.exceptions.ChildNotFoundException: No child for this element!
+	at com.sparta.joel.tree.BinaryTreeImpl.getLeftChild(BinaryTreeImpl.java:63) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTreeTraverse(SortRunner.java:53) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTree(SortRunner.java:47) ~[classes/:?]
+	at com.sparta.joel.starters.Starter.binaryTreeStart(Starter.java:53) ~[classes/:?]
+	at com.sparta.joel.starters.Starter.start(Starter.java:26) [classes/:?]
+	at com.sparta.joel.starters.Main.main(Main.java:6) [classes/:?]
+[ERROR] 2021-02-12 15:02:02.843 [main] SortRunner - No child found
+[ERROR] 2021-02-12 15:02:02.845 [main] Starter - Child not found!
+com.sparta.joel.exceptions.ChildNotFoundException: No child for this element!
+	at com.sparta.joel.tree.BinaryTreeImpl.getLeftChild(BinaryTreeImpl.java:63) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTreeTraverse(SortRunner.java:53) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTreeTraverse(SortRunner.java:61) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTreeTraverse(SortRunner.java:61) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTreeTraverse(SortRunner.java:61) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTree(SortRunner.java:47) ~[classes/:?]
+	at com.sparta.joel.starters.Starter.binaryTreeStart(Starter.java:53) ~[classes/:?]
+	at com.sparta.joel.starters.Starter.start(Starter.java:26) [classes/:?]
+	at com.sparta.joel.starters.Main.main(Main.java:6) [classes/:?]
+[ERROR] 2021-02-12 15:04:41.785 [main] SortRunner - No child found
+[ERROR] 2021-02-12 15:04:41.788 [main] Starter - Child not found!
+com.sparta.joel.exceptions.ChildNotFoundException: No child for this element!
+	at com.sparta.joel.tree.BinaryTreeImpl.getLeftChild(BinaryTreeImpl.java:63) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTreeTraverse(SortRunner.java:53) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTreeTraverse(SortRunner.java:58) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTree(SortRunner.java:47) ~[classes/:?]
+	at com.sparta.joel.starters.Starter.binaryTreeStart(Starter.java:53) ~[classes/:?]
+	at com.sparta.joel.starters.Starter.start(Starter.java:26) [classes/:?]
+	at com.sparta.joel.starters.Main.main(Main.java:6) [classes/:?]
+[ERROR] 2021-02-12 15:07:26.848 [main] SortRunner - No child found
+[ERROR] 2021-02-12 15:07:26.851 [main] Starter - Child not found!
+com.sparta.joel.exceptions.ChildNotFoundException: No child for this element!
+	at com.sparta.joel.tree.BinaryTreeImpl.getLeftChild(BinaryTreeImpl.java:63) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTreeTraverse(SortRunner.java:54) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTreeTraverse(SortRunner.java:59) ~[classes/:?]
+	at com.sparta.joel.starters.SortRunner.binaryTree(SortRunner.java:47) ~[classes/:?]
+	at com.sparta.joel.starters.Starter.binaryTreeStart(Starter.java:53) ~[classes/:?]
+	at com.sparta.joel.starters.Starter.start(Starter.java:26) [classes/:?]
+	at com.sparta.joel.starters.Main.main(Main.java:6) [classes/:?]

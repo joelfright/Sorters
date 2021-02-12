@@ -17,4 +17,12 @@ public class Printer {
         System.out.println(TimeUnit.NANOSECONDS.toMicros(time) + " microseconds");
     }
 
+    public static void printLine(){
+        System.out.println();
+    }
+
+    public static void printInt(int value){
+        System.out.println(value);
+    }
+
 }
