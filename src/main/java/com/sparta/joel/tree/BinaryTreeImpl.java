@@ -55,8 +55,9 @@ public class BinaryTreeImpl implements BinaryTree{
 
     @Override
     public int getLeftChild(int element) throws ChildNotFoundException {
-        if(root.left != null){
-            return root.left.value;
+        Node node = findChildNode(root,element);
+        if(node.left != null){
+            return node.left.value;
         }else{
             logger.error("No child found");
             throw new ChildNotFoundException("No child for this element!");
@@ -65,8 +66,9 @@ public class BinaryTreeImpl implements BinaryTree{
 
     @Override
     public int getRightChild(int element) throws ChildNotFoundException {
-        if(root.right != null){
-            return root.right.value;
+        Node node = findChildNode(root,element);
+        if(node.right != null){
+            return node.right.value;
         }else{
             logger.error("No child found");
             throw new ChildNotFoundException("No child for this element!");
@@ -137,6 +139,20 @@ public class BinaryTreeImpl implements BinaryTree{
             traverseRight(node.left);
             sortedList.add(node.value);
             traverseRight(node.right);
+        }
+    }
+
+    private Node findChildNode(Node current, int value){
+        if(current == null){
+            return null;
+        }
+        if(value == current.value){
+            return current;
+        }
+        if(value < current.value){
+            return findChildNode(current.left, value);
+        }else{
+            return findChildNode(current.right, value);
         }
     }
 

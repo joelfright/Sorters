@@ -1,12 +1,11 @@
 package com.sparta.joel.starters;
 
 import com.sparta.joel.exceptions.EmptyArrayException;
+import com.sparta.joel.printer.Input;
 import com.sparta.joel.printer.Printer;
 import com.sparta.joel.sorters.Sorts;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-import java.util.Scanner;
 
 public class Starter {
 
@@ -18,14 +17,16 @@ public class Starter {
             sortersStart();
         } catch (EmptyArrayException e) {
             logger.error("Empty array!", e);
+        } catch (Exception e){
+            logger.fatal("Fatal Exception: ", e);
         }
         binaryTreeStart();
     }
 
     private static void sortersStart() throws EmptyArrayException {
-        Scanner scanner = new Scanner(System.in);
         Printer.printString("Enter a sorter: (bubble (default)/merge) ");
-        String sorter = scanner.nextLine();
+        String sorter = Input.enterString();
+
         if(sorter.equalsIgnoreCase("merge")){
             Printer.printString("---------------Merge Sort--------------");
             SortRunner.sorters(Sorts.Merge);
@@ -33,13 +34,14 @@ public class Starter {
             Printer.printString("--------------Bubble Sort--------------");
             SortRunner.sorters(Sorts.Bubble);
         }
+
         Printer.printString("---------------------------------------\n");
     }
 
     private static void binaryTreeStart(){
-        Scanner scanner = new Scanner(System.in);
         Printer.printString("Binary tree order: (asc (default)/desc) ");
-        String ascending = scanner.nextLine();
+        String ascending = Input.enterString();
+
         Printer.printString("--------------Binary Tree--------------");
         SortRunner.binaryTree(!ascending.equalsIgnoreCase("desc"));
         Printer.printString("---------------------------------------");

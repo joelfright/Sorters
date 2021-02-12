@@ -13,14 +13,6 @@ public class Printer {
         System.out.println(text);
     }
 
-    public static void printErrorMessage(String error){
-        System.err.println(error);
-    }
-
-    public static void printInt(int num){
-        System.out.println(num);
-    }
-
     public static void printTimeResults(long time){
         System.out.println(TimeUnit.NANOSECONDS.toMicros(time) + " microseconds");
     }
